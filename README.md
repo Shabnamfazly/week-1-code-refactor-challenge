@@ -16,6 +16,9 @@ This project aided my learning of:
 
 ## Usage
 The website is easy to use with three navigation links that can be used by clicking on them which wil redirect the user to the informative description and image of said link.
+<img src=".\assets\images\Screenshot1.png"/>
+<img src=".\assets\images\Screenshot2.png"/>
+<img src=".\assets\images\Screenshot3.png"/>
 
 ## Installation
 N/A
