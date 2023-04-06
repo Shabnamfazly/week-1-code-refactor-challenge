@@ -4,25 +4,30 @@
 <head>
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="./assets/css/style.css">
-    <title>website</title>
+    <!-- Added the company name to the title to make it more accesible and descriptive which will increase search engine optimisation. -->
+    <title>Horiseon Social Solution Services, Inc.</title>  
 </head>
 
 <body>
-    <Section class="header">
+    <!--Added a header tag and section elemant by changing the repetitive div tags throughout the HTML to give semantic structure to modernise the code-->
+    <header>
         <h1>Hori<span class="seo">seo</span>n</h1>
-        <div>
+        <!--Added a nav tag by changing repetitive div tags-->
+        <nav>
             <ul>
                 <li><a href="#search-engine-optimization">Search Engine Optimization</a></li>
                 <li><a href="#online-reputation-management">Online Reputation Management</a></li>
                 <li><a href="#social-media-marketing">Social Media Marketing</a></li>
             </ul>
-        </div>
-    </Section>
+        </nav>
+    </header>
     <Section class="hero"></Section>
     <Section class="content">
-        <Section class="search-engine-optimization">
+        <Section id="search-engine-optimization" class="Marketing">
+        <!--Added figure and article element to replace div tags and represent self contained content; and an an alt attribute to specify an alternate text for the area if the image cannot be displayed.
+             This makes the website inclusive for those using screen readers.-->
             <figure>
-            <img src="./assets/images/search-engine-optimization.jpg" class="float-left" />
+            <img src="./assets/images/search-engine-optimization.jpg" class="float-left" alt="Image of brainstorming in a book" />
             </figure>
             <article>
             <h2>Search Engine Optimization</h2>
@@ -32,9 +37,10 @@
             </article>
 
         </Section>
-        <Section id="online-reputation-management" class="online-reputation-management">
+        <!-- Gave all three section id's the class of 'Marketing' and this is refrenced in the CSS to condense the html which will make the styling apply to all three sections as it was repetitive-->
+        <Section id="online-reputation-management" class="Marketing">
             <figure>
-            <img src="./assets/images/online-reputation-management.jpg" class="float-right" />
+            <img src="./assets/images/online-reputation-management.jpg" class="float-right" alt="Image of laptop with 'reputation' on the screen"/>
             </figure>
             <article>
             <h2>Online Reputation Management</h2>
@@ -43,9 +49,9 @@
             </p>
             </article>
         </Section>
-        <Section id="social-media-marketing" class="social-media-marketing">
+        <Section id="social-media-marketing" class="Marketing">
             <figure>
-            <img src="./assets/images/social-media-marketing.jpg" class="float-left" />
+            <img src="./assets/images/social-media-marketing.jpg" class="float-left" alt="Image of social media discussion"/>
             </figure>
             <article>
             <h2>Social Media Marketing</h2>
@@ -55,8 +61,9 @@
             </article>
         </Section>
     </Section>
+    <!--Gave all three section class' one name of 'benefit ' and this is refrenced in the CSS to condense the html which will make the styling apply to all three sections as it was repetitive-->
     <Section class="benefits">
-        <section class="benefit-lead">
+        <section class="benefit">
             <article>
             <h3>Lead Generation</h3>
             <figure>
@@ -67,7 +74,7 @@
             </p>
             </article>
         </section>
-        <Section class="benefit-brand">
+        <Section class="benefit">
             <article>
             <h3>Brand Awareness</h3>
             <figure>
@@ -78,7 +85,7 @@
             </p>
             </article>
         </Section>
-        <Section class="benefit-cost">
+        <Section class="benefit">
             <article>
             <h3>Cost Management</h3>
             <figure>
@@ -91,13 +98,15 @@
 
         </Section>
     </Section>
-    <Section class="footer">
-        <h2>Made with ❤️️ by Horiseon</h2>
+    <!--Added a footer element to change the repetitive div tags-->
+    <footer>
+        <!--Changed the h2 tag to h4 so the code falls in sequential order.-->
+        <h4>Made with ❤️️ by Horiseon</h4>
         <p>
             &copy; 2019 Horiseon Social Solution Services, Inc.
         </p>
     
-    </Section>
+    </footer>
 </body>
 
 </html>
